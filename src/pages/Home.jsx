@@ -1,4 +1,7 @@
+import EmployeeList from "../components/employee/EmployeeList";
+
 const Home = () => {
+
     return (
         <>
             <div className="container-fluid">
@@ -41,23 +44,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <table className="table caption-top bg-white rounded mt-2">
-                <caption className="text-white fs-4">Recent Orders</caption>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tbody>
-            </table>
+            <EmployeeList />
         </>
     )
 }

@@ -4,11 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ToggleProvider from './contexts/ToggleContext';
+import KindEmployeeProvider from './contexts/KindEmployeeContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ToggleProvider>
-    <App />
+    <KindEmployeeProvider>
+      <App />
+    </KindEmployeeProvider>
   </ToggleProvider>
 );
 
