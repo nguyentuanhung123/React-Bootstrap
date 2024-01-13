@@ -30,7 +30,7 @@ const EmployeeList = () => {
                 {
                     isLoading === true &&
                     <tr>
-                        <td colSpan="5" style={{ 'textAlign': 'center' }}>
+                        <td colSpan="6" style={{ 'textAlign': 'center' }}>
                             Loading...</td>
                     </tr>
                 }
