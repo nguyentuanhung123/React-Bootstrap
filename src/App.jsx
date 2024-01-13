@@ -11,6 +11,8 @@ import RootLayout from "./components/RootLayout";
 
 import Home from "./pages/Home";
 import Test from "./pages/Test";
+import House from "./pages/House";
+import Customers from "./pages/Customers";
 
 // Use Bootstrap
 // Step 1 : npm install react-bootstrap bootstrap
@@ -28,6 +30,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/test" element={<Test />}></Route>
+          <Route path="/house" element={<House />}></Route>
+          <Route path="/customers" element={<Customers />}></Route>
         </Routes>
       </RootLayout>
     </Router>

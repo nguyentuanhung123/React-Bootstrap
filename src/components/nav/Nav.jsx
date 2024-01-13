@@ -1,10 +1,16 @@
+import { useContext } from "react";
+import { ToggleContext } from "../../contexts/ToggleContext";
+
 const Nav = () => {
+
+    const { Toggle } = useContext(ToggleContext);
+
     return (
         //bs5-nav -> bs5-navbar-background
         <nav
-            className="navbar navbar-expand-sm navbar-white bg-white px-3"
+            className="navbar navbar-expand-sm navbar-dark bg-transparent px-3"
         >
-            <i className="navbar-brand bi bi-justify-left fs-4">Navbar</i>
+            <i className="navbar-brand bi bi-justify-left fs-4" onClick={Toggle}></i>
             <button
                 className="navbar-toggler d-lg-none"
                 type="button"
@@ -13,7 +19,9 @@ const Nav = () => {
                 aria-controls="collapsibleNavId"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
-            ></button>
+            >
+                <i className="bi bi-justify"></i>
+            </button>
             <div className="collapse navbar-collapse" id="collapsibleNavId">
                 {/* change me-auto -> ms-auto */}
                 <ul className="navbar-nav ms-auto mt-2 mt-lg-0">
